@@ -319,8 +319,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Scripts/Chameleon.cs"
 "Assets/Scripts/Chest.cs"
+"Assets/Scripts/CrazyBox.cs"
 "Assets/Scripts/Interateble.cs"
+"Assets/Scripts/KillerChest.cs"
 "Assets/Scripts/LootNode.cs"
 "Assets/Scripts/Player.cs"
 -langversion:8.0

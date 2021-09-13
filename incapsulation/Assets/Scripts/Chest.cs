@@ -5,19 +5,20 @@ using UnityEngine;
 public class Chest : LootNode 
 {
     private List<GameObject> _items = new List<GameObject>();
-    void Start()
+    public void Open()
     {
         _items.ForEach(x => x.SetActive(true));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        base.PopulateItem(item);
+    
+   
 
+    protected override GameObject PopulateItem(GameObject item)
+    {
+        
         _items.Add(item);
         item.SetActive(false);
 
-        
+        return base.PopulateItem(item);
     }
 }

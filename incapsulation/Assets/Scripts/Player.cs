@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ public class Player : MonoBehaviour
 {
     [SerializeField]
     public float _speed;
+
+   
     public Vector3 _direction;
     public float Speed => _speed;
 

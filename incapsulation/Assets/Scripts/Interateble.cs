@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    class KillerChest
+    partial class KillerChest
     {
 
     }

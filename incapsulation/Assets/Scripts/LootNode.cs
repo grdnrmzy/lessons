@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class NewBehaviourScript : MonoBehaviour
+public class LootNode : MonoBehaviour
 {
     [SerializeField] private int _weaponChange;
     [SerializeField] private int _armorChange;
@@ -10,17 +12,24 @@ public class NewBehaviourScript : MonoBehaviour
     void Start()
     {
         var item = GetRandomItem();
-        PopulteItem(item);
+        PopulateItem(item);
     }
 
-    protected GameObject PopulteItem()
+    protected virtual GameObject PopulateItem(GameObject item)
     {
-        item.translate.parent = item.transform;
-        item.transform.;ocalPosition = Vector3.zero;
+        item.transform.parent = item.transform;
+        item.transform.localPosition = Vector3.zero;
+        throw new NotImplementedException();
     }
 
     protected GameObject GetRandomItem()
     {
         return new GameObject("Item " + Random.Range(0, 1000));
+
+    }
+
+    private void Awake()
+    {
+        throw new NotImplementedException();
     }
 }
