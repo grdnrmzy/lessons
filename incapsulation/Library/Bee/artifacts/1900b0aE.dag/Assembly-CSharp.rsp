@@ -323,6 +323,7 @@
 "Assets/Scripts/Chest.cs"
 "Assets/Scripts/CrazyBox.cs"
 "Assets/Scripts/Interateble.cs"
+"Assets/Scripts/InteritablePicker.cs"
 "Assets/Scripts/KillerChest.cs"
 "Assets/Scripts/LootNode.cs"
 "Assets/Scripts/Player.cs"
